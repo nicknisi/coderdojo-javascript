@@ -1,0 +1,130 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Introduction to Programming with JavaScript
+
+    // build:css styles/styles.css
+    //- Check out 'src/bower_components/prism/themes/' for available themes
+    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    // endbuild
+
+  body
+
+    article
+
+      section
+        h1 CoderDojo
+        h2 Introduction to JavaScript
+
+      section
+        h2 Why Programming?
+        ul
+          li Make technology work for you
+          li Create
+          li Solve problems
+          li Have fun!
+
+      section.gif.gif-jobs
+        blockquote(style='display:inline-block;text-align:left:left;padding-right:40%;') "Everybody in this country should learn how to program a computer... because it teaches you how to think."
+
+      section.gif.gif-batman
+        h2 Programming as a SuperPower!
+        blockquote "Programming as a profession is only moderately interesting. You're much better off using code as your secret
+          weapon in another profession." - Zed Shaw
+
+      section.gif.gif-doge-language
+        h2 Which Language should I choose?
+
+      section.gif.gif-boogie
+        h1 All Languages Are Good!
+
+      section.gif.gif-pick
+        h1 JavaScript!
+
+      section.gif.gif-why
+        h1 Why JavaScript?
+
+      section.gif.gif-jseverywhere
+
+      section.gif.gif-browser-war
+        h1 Available In All Browsers
+
+      section
+        h2 What is JavaScript?
+        ul
+          li Scripting language
+          li Runs in all web browsers
+          li runs on servers
+
+      section.gif.gif-tellmore
+        h1 What Can I Do With JavaScript?
+
+      section.gif.gif-gmail
+        h2 Web Applications
+
+      section.gif.gif-swgame
+        h1 Games!
+
+      section.gif.gif-drone
+        h1 Control Hardware!
+
+      section.gif.gif-peewee
+        h2 Let's Get Started!
+
+      section
+        h2 Start with a an html file
+        pre
+          code.language-javascript.
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Test Page&lt;/title&gt;
+              &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+      section
+        h2 Add a script tag
+        pre
+          code.language-javascript.
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Test Page&lt;/title&gt;
+                &lt;script&gt;
+                  alert('Hello, World!');
+                &lt;/script&gt;
+              &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+      section
+        h2 Hello, World!
+        pre
+          code.language-javascript.
+            // create a variable to hold the text
+            var text = 'Hello, World!';
+
+            // output it to the console
+            console.log(text);
+            // aler the text
+            alert(text);
+
+    // build:js scripts/scripts.js
+    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/prism/prism.js')
+    script(src='scripts/main.js')
+    // endbuild
